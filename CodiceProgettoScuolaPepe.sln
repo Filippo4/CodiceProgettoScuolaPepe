@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotoMassimoScuola", "VotoMassimoScuola\VotoMassimoScuola.csproj", "{68861587-0EF5-471E-9363-2D6970A3299B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VotoMassimoScuola", "VotoMassimoScuola\VotoMassimoScuola.csproj", "{68861587-0EF5-471E-9363-2D6970A3299B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaRegistroPepe", "ProvaRegistroPepe\ProvaRegistroPepe.csproj", "{F444541F-F976-43D6-8867-09D6551D38B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{68861587-0EF5-471E-9363-2D6970A3299B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68861587-0EF5-471E-9363-2D6970A3299B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68861587-0EF5-471E-9363-2D6970A3299B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F444541F-F976-43D6-8867-09D6551D38B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F444541F-F976-43D6-8867-09D6551D38B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F444541F-F976-43D6-8867-09D6551D38B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F444541F-F976-43D6-8867-09D6551D38B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

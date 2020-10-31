@@ -13,7 +13,7 @@ namespace VotoMassimoScuola
         {
             Nome = n;
         }
-        public Classe CreateClass(string s, int a)
+        public Classe CreaClasse(string s, int a)
         {
             Classe classe = new Classe(a, s);
             classi.Add(classe);
