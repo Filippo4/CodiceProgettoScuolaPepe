@@ -13,7 +13,7 @@ namespace VotoMassimoScuola
         public Votazione(double v, Studente s, Materia m )
         {
             Voto = v;
-            Studente = s;
+            Studente.AddVoto(this);
             Materia = m;
         }
         public bool IsSufficiente(double Voto)
@@ -23,6 +23,13 @@ namespace VotoMassimoScuola
             else
                 return false;
         }
-
+        public double GetVotoDouble()
+        {
+            return Voto;
+        }
+        public Votazione GetVoto()
+        {
+            return this;
+        }
     }
 }

@@ -15,22 +15,23 @@ namespace VotoMassimoScuola
             Nome = n;
             Cognome = c;
         }
+
         public void AddVoto( Votazione v)
         {
             Voti.Add(v);
         }
         public Votazione TrovaVotoMassimo()
         {
-            double max = 0;
-            for (int i = 0; i>Voti.Count;i++)
+            int indice = 0;
+            double max = -1;
+            for (int i = 0; i < Voti.Count; i++)
             {
-                if (Voti[i]>)
-                {
-                    max = Voti[i];
-                }
-
-                return max;
+                if (Voti[i].GetVotoDouble() > max)
+                    indice = i;
             }
+            return Voti[indice].GetVoto();
+
         }
     }
 }
+

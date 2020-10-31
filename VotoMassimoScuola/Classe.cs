@@ -16,10 +16,23 @@ namespace VotoMassimoScuola
         }
         public void AddStudente(Studente s)
         {
-            studente.Add(s)
+            studente.Add(s);
         }
-        public Materia TrovaVotoMassimo()
+        public Votazione TrovaVotoMassimo()
         {
+
+            double max = -1;
+            int indice = 0;
+            for (int i = 0; i < studente.Count; i++)
+            {
+                Votazione voto = studente[i].TrovaVotoMassimo();
+                if (voto.GetVotoDouble() > max)
+                {
+                    max = voto.GetVotoDouble();
+                    indice = i;
+                }
+            }
+            return studente[indice].TrovaVotoMassimo();
 
         }
     }
