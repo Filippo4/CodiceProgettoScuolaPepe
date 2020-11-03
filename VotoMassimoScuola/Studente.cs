@@ -32,6 +32,18 @@ namespace VotoMassimoScuola
             return Voti[indice].GetVoto();
 
         }
+        public Votazione TrovaVotoMinimo()
+        {
+            int indice = 0;
+            double min = 11;
+            for (int i = 0; i < Voti.Count; i++)
+            {
+                if (Voti[i].GetVotoDouble() <min)
+                    indice = i;
+            }
+            return Voti[indice].GetVoto();
+
+        }
     }
 }
 
