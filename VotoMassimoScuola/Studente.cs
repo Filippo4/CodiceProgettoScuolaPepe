@@ -44,6 +44,20 @@ namespace VotoMassimoScuola
             return Voti[indice].GetVoto();
 
         }
+        public Votazione TrovaVotoPiuRecente()
+        {
+            DateTime DataRecente = new DateTime(2020,03,02);
+            int indice = 0;
+            for(int i = 0;i<Voti.Count;i++)
+            {
+                if(Voti[i].Data < DataRecente)
+                {
+                    DataRecente = Voti[i].Data;
+                    indice = i;
+                }
+            }
+            return Voti[indice];
+        }
     }
 }
 
